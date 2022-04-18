@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form>
-        <fieldset> <legend>Личные данные </legend>
-    <br><label>Имя</label>
-    <br><input type="text">
-    <br><label>Фамилия</label>
-    <br><input type="text">
-    <br><label>E-mail</label>
-    <br><input type="email">
-    <br><label>Телефон</label>
-    <br><input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-    <br><label>Фото паспорта</label>
-    <br><input type="file">
+        <fieldset>
+            <legend>Личные данные </legend>
+            <br><label>Имя</label>
+            <br><input type="text">
+            <br><label>Фамилия</label>
+            <br><input type="text">
+            <br><label>E-mail</label>
+            <br><input type="email">
+            <br><label>Телефон</label>
+            <br><input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+            <br><label>Фото паспорта</label>
+            <br><input type="file">
         </fieldset> <br>
-        <fieldset> <Legend>Адрес</Legend>
-    <br> <lable>Город</lable>
-    <br><input type="text">
-    <br> <lable>Улица</lable>
-    <br><input type="text">
-    <br> <lable>Дом/Квартира</lable>
-    <br><input type="text">
-        </fieldset> 
+        <fieldset>
+            <Legend>Адрес</Legend>
+            <br>
+            <lable>Город</lable>
+            <br><input type="text">
+            <br>
+            <lable>Улица</lable>
+            <br><input type="text">
+            <br>
+            <lable>Дом/Квартира</lable>
+            <br><input type="text">
+        </fieldset>
 
-    <br> <fieldset><legend>Детали</legend>
-        <label>Товар</label>
-    <br><select>
-        <option>Молот</option>
-        <option>Дрель</option>
-        <option>Отвёртка</option>
-        <option>Лом</option>
-    </select>
-    <br> <lable>Количество</lable>
-	 <input type="range" min="0" max="10" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span id="rangeValue">5</span></p>
-     <datalist id="rangeList">
-     <option value="0" label="0">
-     <option value="2" label="2">
-     <option value="4" label="4">
-     <option value="6" label="6">
-     <option value="8" label="8">
-     <option value="10" label="10">
-     </datalist>
-     <lable>Время доставки</lable>
-     <br><input type="date">
-     <br><input type="radio" name="urok1"> <label>Днем</label>
-     <br><input type="radio" name="urok1"> <label>Вечером</label>
-</fieldset>
-<br><button>Заказать</button> <input type="checkbox"> <label>Я согласен с условиями</label>
- </form>
+        <br>
+        <fieldset>
+            <legend>Детали</legend>
+            <label>Товар</label>
+            <br><select>
+                <option>Молот</option>
+                <option>Дрель</option>
+                <option>Отвёртка</option>
+                <option>Лом</option>
+            </select>
+            <br>
+            <lable>Количество</lable>
+            <input type="range" min="0" max="10"
+                onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList"> <span
+                id="rangeValue">5</span></p>
+            <datalist id="rangeList">
+                <option value="0" label="0">
+                <option value="2" label="2">
+                <option value="4" label="4">
+                <option value="6" label="6">
+                <option value="8" label="8">
+                <option value="10" label="10">
+            </datalist>
+            <lable>Время доставки</lable>
+            <br><input type="date">
+            <br><input type="radio" name="urok1"> <label>Днем</label>
+            <br><input type="radio" name="urok1"> <label>Вечером</label>
+        </fieldset>
+        <br><button>Заказать</button> <input type="checkbox"> <label>Я согласен с условиями</label>
+    </form>
 </body>
+
 </html>
